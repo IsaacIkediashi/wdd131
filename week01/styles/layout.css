@@ -14,8 +14,7 @@ body{
 
 main{
  display: grid;
- grid-template-columns: 5fr 1fr;
- /* height: 300px; */
+ grid-template-columns: 4fr 1fr;
 }
 
 .header{
@@ -30,21 +29,28 @@ main{
 }
 main aside{
  background-color: brown;
- padding: 15px;
+ padding-top: 15px;
+ padding-left: 25px;
 }
 
 ul{
  display: flex;
- justify-content: space-between;
- align-items: center;
+ flex-wrap: wrap;
  padding: 15px 82px;
+ align-items: center;
  background-color: red;
  list-style: none;
+}
+
+li{
+ flex: 1 1 auto;
 }
 
 footer{
  text-align: center;
  background: red;
  padding-top: 15px;
- /* padding-bottom: 107px; */
 }
+
+
+
