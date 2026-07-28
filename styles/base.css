@@ -1,0 +1,54 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: medium;
+}
+
+main{
+ 
+}
+
+h1{
+ text-align: center;
+}
+
+#course-title{
+ background-color: rgb(59, 59, 126);
+ font-size: 20px;
+ text-align: center;
+ color: white;
+ line-height: 4.25rem;
+ height: 68px;
+}
+
+nav{
+ background-color: rgb(44, 44, 49);
+ display: flex;
+ list-style: none;
+ line-height: 3.0rem;
+ height: 48px;
+}
+
+li{
+ text-align: center;
+ flex: 1 1 auto;
+}
+
+a{
+ text-decoration: none;
+ display: block;
+ color: white;
+}
+
+span{
+ display: block;
+}
+
+#card{
+ border-radius: 30px;
+}
