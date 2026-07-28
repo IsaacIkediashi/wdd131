@@ -4,21 +4,111 @@
  box-sizing: border-box;
 }
 
+:root{
+ --background-color: rgb(59, 59, 126);
+ --border-radius: 8px;
+}
 body{
  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  font-size: medium;
 }
 
-main{
- 
-}
+/* main{
+ padding-bottom: 30px;
+} */
 
 h1{
  text-align: center;
+ font-weight: 100;
+ padding-top: 15px;
+ padding-bottom: 8px;
+}
+
+h2{
+ background-color: var(--background-color);
+ color: white;
+ line-height: 1.75rem;
+ font-weight: bold;
+ font-size: 17px;
+ text-align: center;
+ padding: 6px;
+ border-top-left-radius: var(--border-radius);
+ border-top-right-radius: var(--border-radius);
+}
+
+h3{
+ text-align: center;
+}
+
+.nationality{
+ width: 40%;
+ margin-left: 9.5rem;
+}
+
+.card-grid{
+ display: grid;
+ grid-template-columns: 4fr 2fr;
+ gap: 20px;
+ max-width: 70.79rem;
+ margin: 0 auto;
+}
+
+.card-profile {
+ display: grid;
+ grid-template-columns: 3fr 1fr;
+ padding-top: 1.5rem;
+}
+
+.card-profile p {
+ padding-top: 7px;
+ text-align: left;
+ line-height: 1.7;
+}
+
+.card-profile img {
+ width: 170px;
+ max-width: 100%;
+ height: auto;
+ justify-self: center;
+
+}
+
+.card-country {
+ display: grid;
+ grid-template-columns: 180px 1fr;
+ gap: 1.5rem;
+ padding-top: 1.5rem;
+}
+
+#flag {
+ text-align: center;
+}
+
+#national-flag {
+ width: 100%;
+ max-width: 160px;
+ height: auto;
+}
+
+.flag-caption {
+ margin-top: .5rem;
+ font-style: italic;
+ font-size: .9rem;
+
+}
+
+.country-description {
+ text-align: left;
+ line-height: 1.7;
+ width: 60%;
+}
+
+.card-profile, .card-country{
+ padding-left: 20px;
 }
 
 #course-title{
- background-color: rgb(59, 59, 126);
+ background-color: var(--background-color);
  font-size: 20px;
  text-align: center;
  color: white;
@@ -26,6 +116,16 @@ h1{
  height: 68px;
 }
 
+.resources-card {
+ display: grid;
+ grid-template-rows: auto 1fr;
+}
+
+#dev-resources {
+ align-self: center;   /* Centers the list vertically */
+ padding-left: 40px;
+}
+ 
 nav{
  background-color: rgb(44, 44, 49);
  display: flex;
@@ -35,20 +135,48 @@ nav{
 }
 
 li{
- text-align: center;
  flex: 1 1 auto;
 }
 
-a{
- text-decoration: none;
+nav a{
  display: block;
+ text-align: center;
+ text-decoration: none;
  color: white;
+}
+
+ul li{
+ text-align: left;
 }
 
 span{
  display: block;
 }
 
-#card{
- border-radius: 30px;
+.card{
+ border-radius: var(--border-radius);
+ border: 1px solid red;
+ padding-bottom: 30px;
+}
+
+ul{
+ padding-left: 40px;
+}
+
+
+
+.line {
+ width: 100%;
+ margin-top: .5rem;
+ margin-bottom: 1.5rem;
+}
+
+
+footer{
+ background-color: rgb(71, 71, 152);
+ padding: 15px;
+ text-align: center;
+ color: white;
+ height: 4.49rem;
+ margin-top: 30px;
 }

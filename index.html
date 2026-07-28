@@ -6,11 +6,11 @@
  <meta name="description" content="">
  <meta name="author" content="Isaac Ikediashi">
  <link rel="stylesheet" href="./styles/base.css">
- <title>WDD 131 – Dynamic Web Fundamentals – Isaac Ikediashi</title>
+ <title>WDD 131 - Dynamic Web Fundamentals – Isaac Ikediashi</title>
 </head>
 <body>
  <header>
-  <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+  <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
   <nav>
    <li><a href="https://linkedin.com">LinkedIn</a></li>
    <li><a href="https://byupw.instructure.com">I-Learn</a></li>
@@ -20,15 +20,55 @@
  </header>
  <main>
   <h1>Isaac Ikediashi</h1>
-  <section class="card">
-   <h2>About me</h2>
-  </section>
-  <section class="card">
+  <div class="card-grid">
+   <section class="card">
+    <h2>About me</h2>
+    <div class="card-profile">
+     <p>My name is Isaac. I was born in Nigeria.
+        I am currently a student of
+        Brigham Young University studying Web development.
+        My hobbies include dancing, eating and watching youtube videos.
+        I love to learn new things and make new friends and make jokes.
+     </p>
+     <img src="./images/profile.jpg" alt="Isaac Ikediashi">
+    </div>
+
+    <div class="nationality">
+     <h3>Lagos, Nigeria</h3>
+     <hr class="line">
+    </div>
+    
+    <div class="card-country">  
+     <div id="flag">
+      <img id="national-flag" src="./images/nigeria-flag.jpg">
+      <p class="flag-caption">Official Flag of <br>Nigeria</p>
+     </div>
+     <p class="country-description">Nigeria, country located on the western coast of Africa. 
+        Nigeria has a diverse geography, with climates ranging from arid to humid equatorial. 
+        However, Nigeria’s most diverse feature is its people.
+        Hundreds of languages are spoken in the country, including Yoruba, Igbo, Fula, Hausa, Edo,
+        Ibibio, Tiv, and English. The country has abundant natural resources, 
+        notably large deposits of petroleum and natural gas.
+     </p>
+   </div>
+  </section> 
+
+  <section class="card resources-card">
    <h2>Web Dev Resources</h2>
-  </section>
+   <ul id="dev-resources">
+    <li><a href="https://dev.to">Dev.to Community</a></li>
+    <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+    <li><a href="https://csstricks.com">CSS Tricks</a></li>
+    <li><a href="https://W3Schools.com">W3 Schools</a></li>
+    <li><a href="https://udemy.com">Udemy</a></li>
+    <li><a>Lorem Picsum Image Placeholder</a></li>
+   </ul>
+  </section> 
+  </div>  
  </main>
+ 
  <footer>
-  <p><span id="currentyear"></span>Isaac Ikediashi Nigeria</p>
+  <p><span id="currentyear"></span> &copy; Isaac Ikediashi Nigeria</p>
   <p id="lastModified"></p>
  </footer>
 </body>
