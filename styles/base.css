@@ -13,9 +13,9 @@ body{
  font-size: medium;
 }
 
-/* main{
+main{
  padding-bottom: 30px;
-} */
+}
 
 h1{
  text-align: center;
@@ -122,7 +122,7 @@ h3{
 }
 
 #dev-resources {
- align-self: center;   /* Centers the list vertically */
+ align-self: center; 
  padding-left: 40px;
 }
  
@@ -178,5 +178,4 @@ footer{
  text-align: center;
  color: white;
  height: 4.49rem;
- margin-top: 30px;
 }
