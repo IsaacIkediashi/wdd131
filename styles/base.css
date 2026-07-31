@@ -138,11 +138,21 @@ li{
  flex: 1 1 auto;
 }
 
+nav a:hover{
+ color:rgb(153, 106, 44);
+}
+
 nav a{
  display: block;
  text-align: center;
  text-decoration: none;
  color: white;
+}
+
+
+
+a:hover{
+ text-decoration: none;
 }
 
 ul li{
