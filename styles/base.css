@@ -140,25 +140,39 @@ h2{
  align-self: center; 
  padding-left: 40px;
 }
+
+#dev-resources li {
+ margin: 8px 0;
+}
+
+#dev-resources a {
+ display: inline-block;
+ padding: 8px 4px;
+}
  
 nav ul{
  background-color: rgb(44, 44, 49);
  display: flex;
  list-style: none;
- line-height: 3.0rem;
- height: 48px;
+ min-height: 48px;
 }
 
 li{
- flex: 1 1 auto;
+ flex: 1;
 }
 
-nav a:hover{
- color:rgb(153, 106, 44);
+nav a:hover, 
+nav a:focus{
+ color: #ffffff;
+ background-color: #555;
 }
 
 nav a{
- display: block;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 48px;
+ padding: 0 12px;
  text-align: center;
  text-decoration: none;
  color: white;
