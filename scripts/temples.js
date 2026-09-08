@@ -18,3 +18,4 @@ hambutton.classList.toggle('show');
 album.classList.toggle('show');
 header.classList.toggle('show');
 });
+

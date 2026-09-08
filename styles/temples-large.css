@@ -2,7 +2,7 @@
  header{
   display: grid;
   grid-template-columns: 5fr 3fr;
-
+  background-color: rgb(71, 71, 152);
   align-items: center;
  }
  
