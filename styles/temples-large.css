@@ -1,0 +1,49 @@
+@media screen and (min-width: 40em){
+ header{
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+
+  align-items: center;
+ }
+ 
+ header h1{
+  text-align: left;
+ }
+
+ header h1, h1{
+  font-size: 20px;
+
+ }
+
+ nav ul{
+  display: flex;
+  font-size: 15px;
+  line-height: 100%;
+ }
+
+ #menu{
+  display: none;
+ }
+
+ nav li{
+  flex: 1 1 auto;
+ }
+  
+ nav, nav a {
+  display: block;
+ }
+
+ nav a{
+  text-align: center;
+ }
+ 
+ .temple-grid {
+  grid-template-columns: repeat(2, 1fr);
+ }
+}
+
+@media screen and (min-width: 900px) {
+ .temple-grid {
+  grid-template-columns: repeat(3, 1fr);
+ }
+}
