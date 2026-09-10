@@ -4,15 +4,16 @@
   grid-template-columns: 5fr 3fr;
   background-color: rgb(71, 71, 152);
   align-items: center;
+  min-height: 3.9rem;
  }
  
- header h1{
+ .site-title{
   text-align: left;
+  font-weight: bold;
  }
 
- header h1, h1{
+ .site-title, h1{
   font-size: 20px;
-
  }
 
  nav ul{

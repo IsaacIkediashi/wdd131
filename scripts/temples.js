@@ -2,7 +2,7 @@ const currentYear = document.querySelector('#currentyear');
 const lastModified = document.querySelector('#lastModified');
 
 const mainnav = document.querySelector('nav');
-const album = document.querySelector('#album');
+const album = document.querySelector('.site-title');
 const hambutton = document.getElementById('menu');
 const header = document.querySelector('header');
 

@@ -16,6 +16,7 @@ header {
 	background-color: #140404;
 	padding: 0 25px;
 	color: white;
+ min-height: 6.2rem;
 }
 
 nav {
@@ -77,11 +78,12 @@ nav a {
  content: "X";
 }
 
-header h1 {
+.site-title {
  font-size: 1.8rem;
+	font-weight: bold;
 }
 
-h1.show {
+.site-title.show {
  display: none;
 }
 
