@@ -19,6 +19,7 @@ header {
  min-height: 6.3rem;
 }
 
+
 nav {
  display: none;
 }
@@ -55,6 +56,10 @@ nav li {
 nav a {
 	color: white;
 	text-decoration: none;
+}
+
+nav a:hover{
+ color: blue;
 }
 
 #menu {
