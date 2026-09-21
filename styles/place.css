@@ -5,7 +5,7 @@
 }
 
 :root{
-	--border-color: 20px solid rgb(54, 109, 54); 
+	--border-color: 20px solid #366d36; 
 }
 
 body {
@@ -13,8 +13,8 @@ body {
 }
 
 header{
- background-color: red;
- color: white;
+ background-color: #ff0000;
+ color: #ffffff;
  border-bottom: var(--border-color);
  min-height: 6.5rem;
 }
@@ -79,7 +79,7 @@ section{
 	display: block;
 	width: 70px;
 	height: 4px;
-	background-color: white;
+	background-color: #ffffff;
 	margin: 8px auto 0;
 }
 
@@ -89,21 +89,21 @@ section{
 }
 
 footer {
-	background-color: rgb(71, 71, 152);
+	background-color: #474798;
 	padding: 15px;
 	text-align: center;
-	color: white;
+	color: #ffffff;
 	height: 4.49rem;
  margin-top: 80px;
 }
 
 footer p:nth-child(1) {
-	color: white;
+	color: #ffffff;
 	font-size: 1.2rem;
 	margin: 0 0 5px;
 }
 
 #lastModified {
-	color: yellowgreen;
+	color: #9acd32;
 	font-size: 0.9rem;
 }
