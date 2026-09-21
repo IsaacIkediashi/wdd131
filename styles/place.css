@@ -4,6 +4,10 @@
  box-sizing: border-box;
 }
 
+:root{
+	--border-color: 20px solid rgb(54, 109, 54); 
+}
+
 body {
  font-family: Roboto, sans-serif;
 }
@@ -11,7 +15,7 @@ body {
 header{
  background-color: red;
  color: white;
- border-bottom: 20px solid rgb(54, 109, 54);
+ border-bottom: var(--border-color);
  min-height: 6.5rem;
 }
 
