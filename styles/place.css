@@ -6,6 +6,7 @@
 
 :root{
 	--border-color: 20px solid #366d36; 
+	--footer-color: #474798;
 }
 
 body {
@@ -89,7 +90,7 @@ section{
 }
 
 footer {
-	background-color: #474798;
+	background-color: var(--footer-color);
 	padding: 15px;
 	text-align: center;
 	color: #ffffff;
