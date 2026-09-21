@@ -49,18 +49,18 @@ section{
 	padding-bottom: 2rem;
 }
 
-#info-title, #info-data {
+.info-title, .info-data {
 	font-size: 20px;
  font-weight: bold;
 	line-height: 1.6;
 }
 
-#info-title{
+.info-title{
 	text-align: right;
 	padding-right: 0.75rem;
 }
 
-#info-data{
+.info-data{
 	text-align: left;
 	padding-left: 0.75rem;
 	font-weight: 400;

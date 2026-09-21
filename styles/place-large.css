@@ -28,7 +28,7 @@
   padding: 0 15px;
 }
 
-#info-title {
+.info-title {
  text-align: right;
  padding-right: 8px;
  font-size: 1rem;
@@ -37,7 +37,7 @@
  white-space: nowrap;
 }
 
-#info-data {
+.info-data {
  text-align: left;
  padding-left: 8px;
  font-size: 1rem;
@@ -81,7 +81,7 @@
   padding: 0 15px;
  }
 
- .weather-info #info-title {
+ .weather-info .info-title {
   text-align: right;
   padding-right: 8px;
   font-size: 0.9rem;
@@ -89,7 +89,7 @@
   line-height: 1.8;
  }
 
- .weather-info #info-data {
+ .weather-info .info-data {
   text-align: left;
   padding-left: 8px;
   font-size: 0.9rem;
