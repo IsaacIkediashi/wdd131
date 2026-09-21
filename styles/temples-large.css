@@ -2,7 +2,7 @@
  header{
   display: grid;
   grid-template-columns: 5fr 3fr;
-  background-color: rgb(71, 71, 152);
+  background-color: red;
   align-items: center;
   min-height: 3.9rem;
  }
@@ -36,10 +36,11 @@
 
  nav a{
   text-align: center;
+  cursor: pointer;
  }
  
  nav a:hover{
- color: rgb(212, 212, 46);
+ color: rgb(231, 231, 14);
 }
 
  .temple-grid {
@@ -48,11 +49,15 @@
 }
 
 @media screen and (min-width: 900px) {
+ header{
+  background-color: rgb(71, 71, 152);
+ }
+
  .temple-grid {
   grid-template-columns: repeat(3, 1fr);
  }
 
  nav a:hover{
- color: rgb(19, 113, 11);
+ color: rgb(84, 240, 69);
  }
 }

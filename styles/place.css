@@ -1,0 +1,90 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Roboto, sans-serif;
+}
+
+header{
+ background-color: red;
+ color: white;
+ border-bottom: 20px solid rgb(54, 109, 54);
+ min-height: 6.5rem;
+}
+
+header h1{
+ font-size: 1.8rem;
+	font-weight: 600;
+ text-align: center;
+ height: 100%;
+ line-height: 104px;
+}
+
+main{
+ display: grid;
+ grid-template-columns: 1fr;
+ 
+}
+
+#dream-city{
+ width: 100%;
+ height: auto;
+}
+
+section{
+ text-align: center;
+}
+
+.data-list, .weather-info{
+ display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-bottom: 2rem;
+}
+
+#info-title, #info-data {
+	font-size: 20px;
+ font-weight: bold;
+	line-height: 1.6;
+}
+
+#info-title{
+	text-align: right;
+	padding-right: 0.75rem;
+}
+
+#info-data{
+	text-align: left;
+	padding-left: 0.75rem;
+	font-weight: 400;
+}
+
+.data-header, .weather-header{
+	margin-top: 30px;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+	margin: 20px 0 50px;
+}
+
+footer {
+	background-color: rgb(71, 71, 152);
+	padding: 15px;
+	text-align: center;
+	color: white;
+	height: 4.49rem;
+ margin-top: 80px;
+}
+
+footer p:nth-child(1) {
+	color: white;
+	font-size: 1.2rem;
+	margin: 0 0 5px;
+}
+
+#lastModified {
+	color: yellowgreen;
+	font-size: 0.9rem;
+}
