@@ -106,9 +106,9 @@ const templeCards = document.querySelector("#temple-cards");
 
 function displayTemples(templesToDisplay) {
 
-templeCards.innerHTML = "";
+ templeCards.innerHTML = "";
 
-templesToDisplay.forEach((temple) => {
+ templesToDisplay.forEach((temple) => {
 
   const card = document.createElement("article");
 

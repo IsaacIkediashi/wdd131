@@ -1,0 +1,258 @@
+:root {
+    --green: #003D32;
+    --second-green: #009B55;
+    --cream: #F5F3EA;
+    --dark: #123C35;
+    --white: #F8FAF9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--cream);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+}
+
+.highlight {
+    color: var(--second-green);
+}
+
+header p {
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--second-green);
+}
+
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: var(--green);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--second-green);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--green);
+    margin: 1rem 0 0.5rem;
+}
+
+p {
+    margin-bottom: 0.8rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Color Schema */
+
+.color-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-item {
+    background-color: var(--cream);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.color-box {
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.second-green {
+    background-color: var(--second-green);
+}
+
+.cream {
+    background-color: var(--cream);
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.poppins-example {
+    font-family: "Poppins", sans-serif;
+}
+
+.roboto-example {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.wireframe {
+    
+    padding: 0.5rem;
+    margin: 1rem auto 2rem;
+    text-align: center;
+}
+
+
+
+.mobile {
+    max-width: 350px;
+}
+
+.mobile img{
+    border: 0.08rem solid black;
+    padding: 12px 20px 10px 20px;
+}
+
+.desktop {
+    max-width: 850px;
+}
+
+.wire-header {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.wire-hero {
+    background-color: #D5D5D5;
+    min-height: 150px;
+    padding: 2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 0.5rem 0;
+}
+
+.wire-hero span {
+    background-color: var(--gold);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+}
+
+.wire-content {
+    background-color: #E7E7E7;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.wire-lines {
+    background: repeating-linear-gradient(
+        to bottom,
+        #BBBBBB 0,
+        #BBBBBB 5px,
+        transparent 5px,
+        transparent 15px
+    );
+    height: 45px;
+    margin-top: 1rem;
+}
+
+.wire-card {
+    background-color: #D0D0D0;
+    padding: 2rem 0.5rem;
+    margin: 0.5rem 0;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.desktop-cards .wire-card {
+    margin: 0;
+}
+
+.wire-footer {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        padding: 0 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .mobile {
+        width: 350px;
+    }
+
+    .wire-header {
+        font-size: 1rem;
+    }
+}
