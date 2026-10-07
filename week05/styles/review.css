@@ -5,14 +5,14 @@
 }
 
 body{
- background-color: #F8F0FB;
+ background-color: rgba(248, 240, 251);
 	font-family: Roboto, sans-serif;
 }
 
 header{
 	text-align: center;
 	background-color: #1F2937;
-	color: white;
+	color: rgba(255, 255, 255);
 }
 
 header img{
@@ -23,7 +23,7 @@ header img{
 }
 
 header h1{
-	background-color: #1F2937;
+	background-color: rgba(31, 41, 55);
 	font-weight: bold;
 	font-size: 2.2rem;
  padding-top: 1rem;
@@ -38,21 +38,21 @@ main{
 }
 
 footer {
-	background-color: #474798;
+	background-color: rgba(71, 71, 152);
 	padding: 15px;
 	text-align: center;
-	color: #FFFFFF;
+	color: rgba(255, 255, 255);
 	height: 4.49rem;
  margin-top: 80px;
 }
 
 footer p:nth-child(1) {
-	color: #FFFFFF;
+	color: rgba(255, 255, 255);
 	font-size: 1.2rem;
 	margin: 0 0 5px;
 }
 
 #lastModified {
-	color: #9ACD32;
+	color: rgba(154, 205, 50);
 	font-size: 0.9rem;
 }
