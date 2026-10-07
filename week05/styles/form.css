@@ -22,7 +22,7 @@ header img{
 	display: block;
 }
 
-header p{
+header h1{
 	background-color: #1F2937;
 	font-weight: bold;
 	font-size: 2.2rem;
@@ -91,6 +91,12 @@ label{
 	margin-bottom: 0;
 }
 
+#checkbox-flex + label{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
 input[type="checkbox"]{
  width: 20px;
  height: 20px;
@@ -126,10 +132,6 @@ input[type="submit"]{
  display: grid;
 	grid-template-columns: 1fr;
 	gap: 0.3rem;
-}
-
-form :nth-child(7){
-	margin-top: 20px;
 }
 
 footer {

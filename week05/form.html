@@ -3,6 +3,8 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="author" content="Isaac Ikediashi">
+ <meta name="description" content="A product review page for a certain list of products">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,7 +16,7 @@
 <body>
  <header>
   <img src="./images/product-review.webp" width="480" height="720">
-  <p>Product Review</p>
+  <h1>Product Review</h1>
  </header>
  <main>
   <form method="get" action="./review.html">
@@ -26,11 +28,11 @@
 
    <div>Overall Rating</div>
    <div id="radio-flex">
-    <label>&star;<input type="radio" id="one-star" name="rating"></label>
-    <label>&star;&star;<input type="radio" id="two-star" name="rating"></label>
-    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating"></label>
-    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating"></label>
-    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating"></label>
+    <label>&star;<input type="radio" id="one-star" name="rating" value="not-quite-good" required></label>
+    <label>&star;&star;<input type="radio" id="two-star" name="rating" value="quite-good" required></label>
+    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" value="good" required></label>
+    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" value="very-good" required></label>
+    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating" value="Excellent" required></label>
    </div>
    
    <label>Date of Installation <input type="date" id="date-input" name="installDate" required></label>
@@ -44,8 +46,9 @@
    </div>
    
    
-   <div>Written Review (optional)</div>
+   <label>Written Review (optional)
    <textarea id="text-field" name="review"></textarea>
+   </label>
 
    <label>Your Name (optional)<input type="text" id="username" name="fullname"></label>
    <input type="submit" value="Post Review">
