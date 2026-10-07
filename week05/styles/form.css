@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background-color: #F8F0FB;
+	font-family: Roboto, sans-serif;
+}
+
+header{
+	text-align: center;
+	background-color: #1F2937;
+	color: white;
+}
+
+header img{
+	width: 100%;
+ height: 9.5rem; 
+	object-fit: cover;
+	display: block;
+}
+
+header p{
+	background-color: #1F2937;
+	font-weight: bold;
+	font-size: 2.2rem;
+ padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+
+main{
+	padding-left: 20px;
+	padding-right: 20px;
+ margin: 3rem auto;
+}
+
+form {
+	width: 100%;
+	background-color: #F4B860;
+	color: #1F2937;
+	border-radius: 6px;
+	font-weight: bold;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+	padding: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select{
+ padding: 0.75rem;
+	border-radius: 6px;
+	border: solid 1px #999;
+	padding: .75rem;
+	color: #555;
+	width: 100%;
+	max-width: 400px;
+	appearance: none;
+}
+
+label, 
+select,
+#username, 
+#date-input{
+	display: block;
+}
+
+label{
+	margin-bottom: 1rem;
+}
+
+#radio-flex{
+	display: flex;
+	gap: 1rem;
+}
+
+#checkbox-flex{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#checkbox-flex label{
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 0;
+}
+
+input[type="checkbox"]{
+ width: 20px;
+ height: 20px;
+}
+
+input[type="radio"]{
+ width: 20px;
+ height: 20px;
+	margin: 0 auto;
+}
+
+#text-field{
+	height: 6rem;
+	margin-bottom: 20px;
+}
+
+
+
+input[type="submit"]{
+	text-align: center;
+	border: none;
+	background-image: linear-gradient(#9c2c13, #6f200e);
+	color: #fff;
+	border-radius: 6px;
+	padding: .8rem;
+	width: 96%;
+	max-width: 400px;
+	margin: 1rem auto;
+	box-shadow: 1px 1px 4px #999;
+}
+
+#radio-flex label{
+ display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.3rem;
+}
+
+form :nth-child(7){
+	margin-top: 20px;
+}
+
+footer {
+	background-color: #474798;
+	padding: 15px;
+	text-align: center;
+	color: #FFFFFF;
+	height: 4.49rem;
+ margin-top: 80px;
+}
+
+footer p:nth-child(1) {
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	margin: 0 0 5px;
+}
+
+#lastModified {
+	color: #9ACD32;
+	font-size: 0.9rem;
+}

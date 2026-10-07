@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./styles/form.css">
+ <link rel="stylesheet" href="./styles/form-large.css">
+ <script src="./scripts/form.js" defer></script>
+ <title>Product Review</title>
+</head>
+<body>
+ <header>
+  <img src="./images/product-review.webp" width="480" height="720">
+  <p>Product Review</p>
+ </header>
+ <main>
+  <form method="get" action="./review.html">
+   <label>Product Name 
+    <select id="products-list" name="products" required>
+    <option value="" >Select a Product ... &#9662;</option>
+    </select>
+   </label>
+
+   <div>Overall Rating</div>
+   <div id="radio-flex">
+    <label>&star;<input type="radio" id="one-star" name="rating"></label>
+    <label>&star;&star;<input type="radio" id="two-star" name="rating"></label>
+    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating"></label>
+    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating"></label>
+    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating"></label>
+   </div>
+   
+   <label>Date of Installation <input type="date" id="date-input" name="installDate" required></label>
+
+   <div>Which features did you find useful in the product? <br>(Check all that apply)</div>
+   <div id="checkbox-flex">
+    <label><input type="checkbox" id="checkbox-1" name="strength" value="yes"> Durability</label>
+    <label><input type="checkbox" id="checkbox-2" name="convenience" value="yes"> Ease of Use</label>
+    <label><input type="checkbox" id="checkbox-3" name="efficiency" value="yes"> Performace</label>
+    <label><input type="checkbox" id="checkbox-4" name="design" value="yes"> Design</label>
+   </div>
+   
+   
+   <div>Written Review (optional)</div>
+   <textarea id="text-field" name="review"></textarea>
+
+   <label>Your Name (optional)<input type="text" id="username" name="fullname"></label>
+   <input type="submit" value="Post Review">
+  </form>
+ </main>
+ <footer>
+  <p>&copy;<span id="currentyear"></span> 📖 Isaac Ikediashi 📖 Nigeria</p>
+  <p id="lastModified"></p>
+ </footer>
+</body>
+</html>
