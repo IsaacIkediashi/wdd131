@@ -19,20 +19,20 @@
   <h1>Product Review</h1>
  </header>
  <main>
-  <form method="get" action="./review.html">
-   <label>Product Name 
-    <select id="products-list" name="products" required>
+  <form method="get" action="review.html">
+   <label for="products-list">Product Name 
+    <select id="products-list" name="products" disabled selected required>
     <option value="" >Select a Product ... &#9662;</option>
     </select>
    </label>
 
    <div>Overall Rating</div>
    <div id="radio-flex">
-    <label>&star;<input type="radio" id="one-star" name="rating" value="not-quite-good" required></label>
-    <label>&star;&star;<input type="radio" id="two-star" name="rating" value="quite-good" required></label>
-    <label>&star;&star;&star;<input type="radio" id="three-star" name="rating" value="good" required></label>
-    <label>&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" value="very-good" required></label>
-    <label>&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating" value="Excellent" required></label>
+    <label for="one-star">&star;<input type="radio" id="one-star" name="rating" value="not-quite-good" required></label>
+    <label for="two-star">&star;&star;<input type="radio" id="two-star" name="rating" value="quite-good" required></label>
+    <label for="three-star">&star;&star;&star;<input type="radio" id="three-star" name="rating" value="good" required></label>
+    <label for="four-star">&star;&star;&star;&star;<input type="radio" id="four-star" name="rating" value="very-good" required></label>
+    <label for="five-star">&star;&star;&star;&star;&star;<input type="radio" id="five-star" name="rating" value="Excellent" required></label>
    </div>
    
    <label>Date of Installation <input type="date" id="date-input" name="installDate" required></label>
