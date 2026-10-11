@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Share your travel interests and start planning an Explore Naija trip.">
+ <meta name="author" content="Isaac Ikediashi">
+ <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles/final-project.css"><link rel="stylesheet" href="styles/final-project-large.css"><script src="scripts/final-project.js" defer></script>
+ <title>Explore Naija | Plan Your Trip</title>
+</head>
+<body>
+<header><a class="brand" href="index.html" aria-label="Explore Naija home"><img src="images/tourism-logo.webp" alt="Explore Naija logo" width="60" height="42"><span>Explore <strong>Naija</strong></span></a><nav aria-label="Main navigation"><ul class="navigation"><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="plan.html" aria-current="page">Plan Your Trip</a></li><li><a href="references.html">References</a></li></ul></nav><button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false"></button></header>
+<main>
+ <section class="page-banner"><p class="eyebrow">Your next experience</p><h1>Plan Your Trip</h1><p>Tell us what you would like to explore in Nigeria.</p></section>
+ <section class="section contact-layout">
+  <div class="contact-copy"><p class="eyebrow">Start planning</p><h2>What would you love to see?</h2><p>Use this form to record your travel interests. This student project demonstrates front-end form validation and local browser storage; it does not send your details to a server.</p><div class="info-panel"><h2>Travel tip</h2><p>Before travelling, verify opening times, transportation, local conditions, and visitor guidance from trusted local sources.</p></div></div>
+  <form id="trip-form">
+   <label for="visitor-name">Full name <span>*</span></label><input id="visitor-name" name="name" type="text" autocomplete="name" required>
+   <label for="visitor-email">Email address <span>*</span></label><input id="visitor-email" name="email" type="email" autocomplete="email" required>
+   <label for="preferred-destination">Preferred destination</label><select id="preferred-destination" name="destination" required><option value="" disabled selected>Select a destination</option><option value="Olumirin Waterfall">Olumirin Waterfall</option><option value="Lekki Conservation Centre">Lekki Conservation Centre</option><option value="Olumo Rock">Olumo Rock</option><option value="Yankari Game Reserve">Yankari Game Reserve</option><option value="Obudu Mountain Area">Obudu Mountain Area</option><option value="Tarkwa Bay">Tarkwa Bay</option><option value="Not sure yet">Not sure yet</option></select>
+   <label for="travel-interest">What interests you most?</label><select id="travel-interest" name="interest" required><option value="" disabled selected>Select an interest</option><option value="Nature">Nature and waterfalls</option><option value="Wildlife">Wildlife and conservation</option><option value="Heritage">Culture and history</option><option value="Coast">Beaches and coastlines</option><option value="City">Cities and food</option></select>
+   <label for="travel-message">Additional notes</label><textarea id="travel-message" name="message" rows="5" placeholder="Share any questions or preferences..."></textarea>
+   <button class="button" type="submit">Save trip interests</button>
+   <p id="trip-form-message" class="form-message" aria-live="polite">Fields marked * are required.</p>
+  </form>
+ </section>
+</main>
+<footer><a class="footer-brand" href="index.html"><img src="images/tourism-logo.webp" alt="" width="54" height="38" loading="lazy"><span>Explore <strong>Naija</strong></span></a><nav aria-label="Footer navigation"><a href="plan.html">Contact</a><span aria-hidden="true">|</span><a href="references.html">References</a></nav><p class="copyright">© <span id="currentyear"></span> Explore Naija | Isaac Ikediashi</p><p class="modified">Last modified: <span id="lastModified"></span></p></footer>
+</body></html>

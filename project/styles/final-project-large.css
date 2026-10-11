@@ -1,0 +1,225 @@
+@media screen and (min-width: 800px) {
+
+    header {
+        position: sticky;
+        top: 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        padding: .65rem 4%;
+        box-shadow: 0 3px 15px rgb(0 0 0 / 8%);
+    }
+
+    .brand {
+        font-size: 1.1rem;
+    }
+
+    .brand img {
+        width: 60px;
+        height: 48px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header nav {
+        justify-self: end;
+    }
+
+    .navigation,
+    .navigation.show {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .35rem;
+        width: auto;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .navigation a {
+        padding: .7rem .85rem;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        white-space: nowrap;
+        font-size: .88rem;
+    }
+
+    .navigation a:hover,
+    .navigation a[aria-current="page"] {
+        border-color: rgb(255 255 255 / 15%);
+        background: var(--second-green);
+        color: #FFFFFF;
+    }
+
+    /* Homepage hero */
+
+    .hero {
+        min-height: 370px;
+        height: 35vw;
+        max-height: 520px;
+        margin: 1.5rem 4% 3rem;
+    }
+
+    .hero-content {
+        padding: 3rem;
+        gap: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+    }
+
+    .button {
+        min-width: 190px;
+    }
+
+
+    .featured {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .section-heading {
+        margin-bottom: 2rem;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.1rem;
+    }
+
+    .destination-tile {
+        min-height: 190px;
+    }
+
+    .destination-tile img {
+        height: 220px;
+    }
+
+    .destination-tile span {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .desktop-tile {
+        display: block;
+    }
+
+    .mobile-trip-images {
+        display: none;
+    }
+
+
+    .page-banner {
+        padding: 4.5rem 5%;
+    }
+
+    .section:not(.featured) {
+        padding: 3rem 4%;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .card-body {
+        padding: 1.4rem;
+    }
+
+    .contact-layout {
+        grid-template-columns: .9fr 1.1fr;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        margin: 3rem 4% .5rem;
+        padding: 1.2rem 2rem;
+        text-align: left;
+    }
+
+    footer nav {
+        justify-content: flex-end;
+    }
+
+    .copyright,
+    .modified {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    header {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .hero {
+        margin-right: 5%;
+        margin-left: 5%;
+        height: 32vw;
+        max-height: 540px;
+    }
+
+    .hero-content {
+        padding: 3.5rem;
+    }
+
+    .featured {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .section:not(.featured) {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.75rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.75rem;
+    }
+
+    .destination-tile,
+    .destination-tile img {
+        height: 230px;
+    }
+
+    .destination-tile span {
+        font-size: 1.05rem;
+    }
+
+    .navigation {
+        gap: .65rem;
+    }
+
+    .navigation a {
+        padding: .75rem 1rem;
+    }
+}

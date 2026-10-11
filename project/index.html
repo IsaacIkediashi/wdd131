@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Explore Naija helps visitors discover Nigerian tourist attractions, natural wonders, cultural heritage, and exciting destinations.">
+ <meta name="author" content="Isaac Ikediashi">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles/final-project.css">
+ <link rel="stylesheet" href="styles/final-project-large.css">
+ <script src="scripts/final-project.js" defer></script>
+ <title>Explore Naija | Discover Nigeria</title>
+</head>
+<body>
+ <header>
+  <a class="brand" href="index.html" aria-label="Explore Naija home">
+   <img src="images/tourism-logo.webp" alt="Explore Naija logo" width="60" height="42">
+   <span>Explore <strong>Naija</strong></span>
+  </a>
+  <nav aria-label="Main navigation">
+   <ul class="navigation">
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="contact.html">Plan Your Trip</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="references.html">References</a></li>
+   </ul>
+  </nav>
+  <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false"></button>
+ </header>
+ <main>
+  <section class="hero">
+   <img class="hero-image" src="images/tourism-landscape.webp" alt="A scenic Nigerian landscape" width="1300" height="750" fetchpriority="high">
+   <div class="hero-content">
+    <p class="eyebrow">Your journey starts here</p>
+    <h1>Discover Nigeria</h1>
+    <p class="hero-description">Explore natural wonders, cultural heritage, and unforgettable destinations across Naija.</p>
+    <a class="button" href="destinations.html">Explore Destinations</a>
+   </div>
+  </section>
+
+  <section class="featured section">
+   <div class="section-heading">
+    <p class="eyebrow">Make your next memory</p>
+    <h2>Featured Destinations</h2>
+   </div>
+   <div class="featured-grid">
+    <a class="destination-tile" href="destinations.html#olumirin">
+     <img src="images/olumirin-waterfall.webp" alt="Olumirin Waterfall surrounded by green vegetation" width="600" height="400" loading="lazy">
+     <span>Olumirin Waterfall</span>
+    </a>
+    <a class="destination-tile" href="destinations.html#lekki">
+     <img src="images/lekki-conservation.webp" alt="Elevated canopy walkway at Lekki Conservation Centre" width="600" height="400" loading="lazy">
+     <span>Lekki Conservation Centre</span>
+    </a>
+    <a class="destination-tile" href="destinations.html#olumo">
+     <img src="images/olumo-rock.webp" alt="Rock formations at Olumo Rock in Abeokuta" width="600" height="400" loading="lazy">
+     <span>Olumo Rock</span>
+    </a>
+    <a class="destination-tile desktop-tile" href="destinations.html#obudu">
+     <img src="images/obudu-mountain.webp" alt="Green mountain scenery in the Obudu area" width="600" height="400" loading="lazy">
+     <span>Obudu Mountain Area</span>
+    </a>
+   </div>
+  </section>
+
+  <section class="mobile-trip-images" aria-label="More Nigerian travel experiences">
+   <a class="trip-image" href="destinations.html#yankari">
+    <img src="images/yankari-reserve.webp" alt="Savanna landscape at Yankari Game Reserve" width="1200" height="700" loading="lazy">
+    <span>Nature and wildlife</span>
+   </a>
+   <a class="trip-image" href="destinations.html#tarkwa">
+    <img src="images/tarkwa-bay.webp" alt="Coastal waters at Tarkwa Bay in Lagos" width="1200" height="700" loading="lazy">
+    <span>Beaches and coastlines</span>
+   </a>
+   <a class="trip-image" href="plan.html">
+    <img src="images/nigeria-culture.webp" alt="A colourful Nigerian cultural celebration" width="1200" height="700" loading="lazy">
+    <span>Culture and heritage</span>
+   </a>
+  </section>
+ </main>
+ <footer>
+  <a class="footer-brand" href="index.html"><img src="images/tourism-logo.webp" alt="" width="54" height="38" loading="lazy"><span>Explore <strong>Naija</strong></span></a>
+  <nav aria-label="Footer navigation"><a href="plan.html">Contact</a><span aria-hidden="true">|</span><a href="references.html">References</a></nav>
+  <p class="copyright">© <span id="currentyear"></span> Explore Naija | Isaac Ikediashi</p>
+  <p class="modified">Last modified: <span id="lastModified"></span></p>
+ </footer>
+</body>
+</html>
